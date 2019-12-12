@@ -8,6 +8,7 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
+    "tailwindcss": "^1.0.0",
     "generate": "DEPLOY_ENV=GH_PAGES nuxt generate",
     "deploy:gh": "git subtree push --prefix dist origin gh-pages"
   },
