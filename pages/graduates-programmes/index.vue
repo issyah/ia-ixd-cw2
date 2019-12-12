@@ -7,13 +7,11 @@
 <script>
 
 export default {
-  components: {
-  },
   head(){
     return {
-        title: 'Yale School Of the Arts',
+        title: 'Graduates Programmes - Yale',
     }
-},
+  },
 }
 </script>
 

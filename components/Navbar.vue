@@ -1,0 +1,89 @@
+<template>
+    <div class="w-full px-4 py-1 md:flex justify-between items-center bg-gray-100">
+        <div class="items-baseline md:flex">
+            <nuxt-link to="/">
+                <div class="px-4 flex items-baseline">
+                    <img src="/images/Yale_School_of_Art.png" alt="Yale School Of Art" class="h-8 inline w-auto self-end"/>
+                    <div class="inline-block ml-2">
+                        <span class="text-2xl font-semibold text-blue-800">YALE</span>
+                    </div>
+                </div>
+            </nuxt-link>
+            <div class="md:flex items-center justify-around">
+                <!-- Navigation -->
+                <div v-for="item in nav">
+                    <template v-if="item.dropdown">
+                        <div class="dropdown relative block md:inline-block mt-4 md:mt-0 md:pl-4">
+                            <a href="#" class="hover:text-blue-800 px-2 py-3 block md:inline-block border-b-2 border-transparent" :class="{'nav-links__active' : ($route.path.indexOf(item.activeLink)!= -1)}">{{item.title}}
+                                <svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="stroke-current inline w-3 y-3 text-black">
+            						<g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+            							<g id="icon-shape">
+            								<polygon id="Combined-Shape" points="9.29289322 12.9497475 10 13.6568542 15.6568542 8 14.2426407 6.58578644 10 10.8284271 5.75735931 6.58578644 4.34314575 8"></polygon>							</g>
+            						</g>
+        						</svg>
+                            </a>
+                            <div class="dropdown-menu rounded md:shadow-lg md:absolute md:w-56 md:left-0 md:bg-white md:hidden overflow-hidden py-2">
+                                <a :href="dropdown.href" class="hover:text-blue-800 block px-4 py-2" v-for="dropdown in item.dropdown">{{dropdown.title}}</a>
+                            </div>
+                        </div>
+                    </template>
+                    <template v-else>
+                        <div class="nav-links">
+                            <a class="" :href="item.href">{{item.title}}</a>
+                        </div>
+                    </template>
+                </div>
+            </div>
+        </div>
+        <div class="md:flex items-center">
+            <div class="nav-links">
+                <a href="#">Staff</a>
+            </div>
+            <div class="nav-links">
+                <a href="#">Students</a>
+            </div>
+        </div>
+    </div>
+</template>
+<style>
+    .dropdown:hover .dropdown-menu, .dropdown:focus .dropdown-menu{
+        @apply block;
+    }
+    .dropdown:hover > a{
+        @apply border-blue-800;
+    }
+    .nav-links{
+        @apply border-b-2 border-transparent px-4 py-2;
+    }
+    .nav-links:hover{
+        @apply border-blue-800;
+    }
+    .nav-links__active{
+        @apply border-blue-800;
+    }
+</style>
+<script>
+    export default {
+        data:()=>({
+            nav: [
+                {
+                    title: 'About the School',
+                    href:"",
+                    dropdown:[
+                        {title: 'Mission Statement', href:""},
+                        {title: 'Visiting', href:""},
+                        {title: 'About this Site', href:""}],
+                        activeLink: 'about-the-school'
+                },
+                {title:'Admission', href:"", dropdown:[
+                    {title: 'Graduate Admission', href:""},
+                    {title: 'Graduate Programmes', href:"graduates-programmes"},
+                    {title: 'Tuition, Fees & Financing'}
+                ],
+                activeLink: 'graduates-programmes'
+                }
+            ]
+        })
+
+    }
+</script>
