@@ -3,7 +3,7 @@
         <div class="items-baseline md:flex">
             <nuxt-link to="/">
                 <div class="px-4 flex items-baseline">
-                    <img src="/images/Yale_School_of_Art.png" alt="Yale School Of Art" class="h-8 inline w-auto self-end"/>
+                    <img src="~/assets/images/Yale_School_of_Art.png" alt="Yale School Of Art" class="h-8 inline w-auto self-end"/>
                     <div class="inline-block ml-2">
                         <span class="text-2xl font-semibold text-blue-800">YALE</span>
                     </div>

@@ -8,8 +8,8 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate",
-    "deploy:gh": "DEPLOY_ENV=GH_PAGES git subtree push --prefix dist origin gh-pages"
+    "generate": "DEPLOY_ENV=GH_PAGES nuxt generate",
+    "deploy:gh": "git subtree push --prefix dist origin gh-pages"
   },
   "dependencies": {
     "nuxt": "^2.0.0"
