@@ -1,4 +1,8 @@
-
+const RouterBase = process.env.DEPLOY_ENV == 'GH_PAGES' ? {
+    router: {
+        base: '/ia-ixd-cw2/'
+    }
+} : {};
 export default {
   mode: 'universal',
   /*
