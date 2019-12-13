@@ -8,7 +8,9 @@
                         <span class="text-2xl font-semibold text-blue-800">YALE</span>
                     </div>
                 </nuxt-link>
-                <button class="md:hidden" @click="mobileNavHidden = !mobileNavHidden">NAV</button>
+                <button class="md:hidden" @click="mobileNavHidden = !mobileNavHidden">
+                    <svg class="fill-current w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg>
+                </button>
             </div>
 
             <div class="md:flex items-center justify-around" :class="{'hidden' : mobileNavHidden}">
@@ -25,13 +27,13 @@
         						</svg>
                             </a>
                             <div class="dropdown-menu rounded md:shadow-lg md:absolute md:w-56 md:left-0 md:bg-white md:hidden overflow-hidden py-2">
-                                <a :href="dropdown.href" class="hover:text-blue-800 block px-4 py-2" v-for="dropdown in item.dropdown">{{dropdown.title}}</a>
+                                <a @click="mobileNavHidden = false" :href="dropdown.href" class="hover:text-blue-800 block px-4 py-2" v-for="dropdown in item.dropdown">{{dropdown.title}}</a>
                             </div>
                         </div>
                     </template>
                     <template v-else>
                         <div class="nav-links">
-                            <a class="" :href="item.href">{{item.title}}</a>
+                            <a class="" :href="item.href" @click="mobileNavHidden = false">{{item.title}}</a>
                         </div>
                     </template>
                 </div>
@@ -80,8 +82,8 @@
                 },
                 {title:'Admission', href:"", dropdown:[
                     {title: 'Graduate Admission', href:""},
-                    {title: 'Graduate Programmes', href:"graduates-programmes"},
-                    {title: 'Tuition, Fees & Financing'}
+                    {title: 'Graduate Programmes', href:"/graduates-programmes"},
+                    {title: 'Financial Matters', href:"/financial-matters"}
                 ],
                 activeLink: 'graduates-programmes'
                 }

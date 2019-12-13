@@ -6,10 +6,10 @@
         <div class="self-center">
           <div class="text-center">
             <div class="bg-gray-700 inline-block my-10">
-              <h1 class="text-center font-serif text-6xl font-bold text-yellow-400 -mt-12 -ml-5">Graduates Programmes</h1>
+              <h1 class="text-center font-serif text-6xl font-bold text-yellow-400 -mt-12 md:-ml-5">Graduates Programmes</h1>
             </div>
           </div>
-          <div class="text-center">
+          <div class="text-center px-4">
             <h4 class="text-gray-400 text-2xl">The Yale School of Art is a graduate school that confers Master of Fine Arts Degrees in Graphic Design, Painting/Printmaking, Photography, and Sculpture</h4>
           </div>
         </div>
@@ -63,7 +63,7 @@ export default {
         title:'Graphic Design',
         img:'https://via.placeholder.com/500?text=Graphic+Design',
         content:'The graphic design program focuses on the development of a cohesive, investigative body of work, also known as the student’s thesis. At Yale, the graphic design thesis is conceived as a loose framework within which each student’s visual method is deployed across many diverse projects during the two-year course of study.',
-        url:'#'
+        url:'/graduates-programmes/graphic-design'
       },
       {
         title:'Painting & Printmaking',
