@@ -1,8 +1,8 @@
 <template>
   <div>
     <!-- banner -->
-    <div class="w-full bg-gray-900 py-10">
-      <div class="container mx-auto pb-20 flex items-center" style="height:500px;">
+    <div class="w-full bg-gray-900 py-10 relative">
+      <div class="container mx-auto pb-20 flex items-center relative" style="height:500px;">
         <div class="self-center">
           <div class="text-center">
             <div class="bg-gray-700 inline-block my-10">
@@ -16,7 +16,7 @@
       </div>
     </div>
     .
-    <div class="container mx-auto md:-mt-56 mb-10">
+    <div class="container mx-auto md:-mt-56 mb-10 relative">
       <!-- Main information -->
       <div class="md:flex md:flex-wrap md:-mx-4">
         <div class="md:w-1/2 overflow-hidden mt-8 px-4" v-for="item in programmes">

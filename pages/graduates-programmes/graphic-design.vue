@@ -1,35 +1,38 @@
 <template>
   <div>
-    <div class="w-full bg-gray-900 pb-10 pt-4">
-      <div class="container mx-auto px-4">
-        <ul class="inline-block text-gray-600">
-          <li class="inline">
-            <nuxt-link to="/graduates-programmes" class="hover:text-yellow-400">Graduates Programme</nuxt-link>
-          </li>
-          <li class="inline">/</li>
-          <li class="inline text-yellow-400">Graphic Design</li>
-        </ul>
-      </div>
-      <div class="container mx-auto px-4 py-12">
-        <div class="text-center">
-        </div>
-        <div class="text-center">
-          <div class="text-gray-400 font-bold text-xl">
-            Masters Of Fine Arts
-          </div>
-          <div class="bg-gray-700 inline-block mt-10">
-            <h1 class="text-center font-serif text-6xl font-bold text-yellow-400 -mt-12 -ml-5">Graphic Design</h1>
-          </div>
-        </div>
-      </div>
-      <div class="text-center">
-        <nuxt-link class="btn-programmes px-12" to="">
-          Apply Now
-        </nuxt-link>
+    <div class="w-full bg-gray-900 pb-10 pt-10 relative">
+      <div class="absolute inset-0">
+        <img src="~assets/images/graphic-design.jpg" alt="Graphic Design" class="w-full h-full absolute object-cover"/>
       </div>
       <!-- main content -->
-      <div class="container mx-auto px-4 py-12 bg-gray-900 shadow-md -mb-24">
-        <div class="md:w-3/4 lg:w-1/2 mx-auto">
+      <div class="lg:w-9/12 mx-auto px-4 py-12 bg-gray-900 shadow-md -mb-40 relative">
+        <div class="container mx-auto px-4 relative">
+          <ul class="inline-block text-gray-600">
+            <li class="inline">
+              <nuxt-link to="/graduates-programmes" class="hover:text-yellow-400">Graduates Programme</nuxt-link>
+            </li>
+            <li class="inline">/</li>
+            <li class="inline text-yellow-400">Graphic Design</li>
+          </ul>
+        </div>
+        <div class="container mx-auto px-4 py-10 relative">
+          <div class="text-center">
+          </div>
+          <div class="text-center">
+            <div class="text-gray-400 font-bold text-xl">
+              Masters Of Fine Arts
+            </div>
+            <div class="bg-gray-700 inline-block mt-10">
+              <h1 class="text-center font-serif text-6xl font-bold text-yellow-400 -mt-12 -ml-5">Graphic Design</h1>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mb-10">
+          <nuxt-link class="btn-programmes px-12" to="">
+            Apply Now
+          </nuxt-link>
+        </div>
+        <div class="md:w-3/4 lg:w-9/12 mx-auto">
           <h2 class="text-center text-3xl mb-4 text-gray-200 font-semibold">Programme Overview</h2>
           <p class="text-gray-400 text-lg leading-relaxed tracking-normal mb-2">The graphic design program focuses on the development of a cohesive, investigative body of work, also known as the student’s thesis. At Yale, the graphic design thesis is conceived as a loose framework within which each student’s visual method is deployed across many diverse projects during the two-year course of study. While every thesis project is unique, there are several common features: a focus on methodology, the application of a visual method to studio work, and the organization of the work in a thoughtfully argued written document and “Thesis Book.”</p>
           <p class="text-gray-400 text-lg leading-relaxed tracking-normal mb-2">
@@ -38,7 +41,7 @@
         </div>
       </div>
     </div>
-    <div class="container mx-auto px-4 py-12 mt-20">
+    <div class="container mx-auto px-4 py-12 mt-40">
       <div class="md:w-4/5 lg:w-9/12 mx-auto">
         <h2 class="text-center text-3xl text-gray-800 mb-4 font-semibold">Facilities</h2>
         <p class="text-gray-700 text-lg leading-relaxed tracking-normal mb-2">

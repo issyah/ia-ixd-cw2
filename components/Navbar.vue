@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full px-4 py-0 md:flex justify-between items-center bg-white">
+    <div class="w-full px-4 py-0 md:flex justify-between items-center bg-white relative z-50">
         <div class="items-baseline md:flex">
             <div class="py-2 md:py-0 flex justify-between md:flex-none">
                 <nuxt-link to="/">
@@ -26,14 +26,14 @@
             						</g>
         						</svg>
                             </a>
-                            <div class="dropdown-menu rounded md:shadow-lg md:absolute md:w-56 md:left-0 md:bg-white md:hidden overflow-hidden py-2">
-                                <nuxt-link :key="index" @click="mobileNavHidden = false" :to="dropdown.href" class="hover:text-blue-800 block px-4 py-2" v-for="(dropdown,index) in item.dropdown">{{dropdown.title}}</nuxt-link>
+                            <div class="dropdown-menu rounded md:shadow-lg md:absolute md:w-56 md:left-0 md:bg-white md:hidden overflow-hidden py-2" v-if="!hideDropdown">
+                                <nuxt-link :key="index"  :to="dropdown.href" class="hover:text-blue-800 block px-4 py-2" v-for="(dropdown,index) in item.dropdown">{{dropdown.title}}</nuxt-link>
                             </div>
                         </div>
                     </template>
                     <template v-else>
                         <div class="nav-links">
-                            <nuxt-link class="" :to="item.href" @click="mobileNavHidden = false">{{item.title}}</nuxt-link>
+                            <nuxt-link class="" :to="item.href" >{{item.title}}</nuxt-link>
                         </div>
                     </template>
                 </div>
@@ -50,7 +50,7 @@
     </div>
 </template>
 <style>
-    .dropdown:hover .dropdown-menu, .dropdown:focus .dropdown-menu{
+    .dropdown:hover  .dropdown-menu, .dropdown:focus .dropdown-menu{
         @apply block;
     }
     .dropdown:hover > a{
@@ -70,6 +70,7 @@
     export default {
         data:()=>({
             mobileNavHidden: true,
+            hideDropdown: false,
             nav: [
                 {
                     title: 'About the School',
@@ -88,7 +89,17 @@
                 activeLink: 'graduates-programmes'
                 }
             ]
-        })
+        }),
+        mounted(){
+        },
+        watch:{
+            $route(value){
+                this.mobileNavHidden = true;
+                // replicate on click href
+                this.hideDropdown = true;
+                setTimeout(()=>{this.hideDropdown = false},250);
+            }
+        }
 
     }
 </script>

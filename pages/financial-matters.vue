@@ -1,11 +1,16 @@
 <template>
   <div>
-    <div class="container px-4 mx-auto">
+    <div class="bg-gray-900 py-4">
+        <div class="container px-4 mx-auto">
+          <!-- heading -->
+          <div class="bg-gray-700 inline-block mt-16">
+            <h1 class="text-center font-serif text-5xl font-bold text-yellow-400 -mt-12 md:-ml-5">Financial Matters</h1>
+          </div>
 
-      <!-- heading -->
-      <div class="bg-yellow-400 inline-block mt-16">
-        <h1 class="text-center font-serif text-5xl font-bold text-gray-800 -mt-12 md:-ml-5">Financial Matters</h1>
-      </div>
+        </div>
+    </div>
+
+    <div class="container px-4 mx-auto">
 
       <!-- Main Tab Section -->
       <div class="my-10">
@@ -63,7 +68,7 @@
 </template>
 <style>
   .finance__tab_li{
-    @apply px-4 py-2 bg-white rounded-full mx-2;
+    @apply px-4 py-2 bg-white rounded-full mx-2 inline-block mt-2;
   }
   .finance__tab_li.active{
     @apply bg-yellow-400 shadow-lg font-semibold text-yellow-900;
