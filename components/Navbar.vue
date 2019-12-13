@@ -27,13 +27,13 @@
         						</svg>
                             </a>
                             <div class="dropdown-menu rounded md:shadow-lg md:absolute md:w-56 md:left-0 md:bg-white md:hidden overflow-hidden py-2">
-                                <a @click="mobileNavHidden = false" :href="dropdown.href" class="hover:text-blue-800 block px-4 py-2" v-for="dropdown in item.dropdown">{{dropdown.title}}</a>
+                                <nuxt-link :key="index" @click="mobileNavHidden = false" :to="dropdown.href" class="hover:text-blue-800 block px-4 py-2" v-for="(dropdown,index) in item.dropdown">{{dropdown.title}}</nuxt-link>
                             </div>
                         </div>
                     </template>
                     <template v-else>
                         <div class="nav-links">
-                            <a class="" :href="item.href" @click="mobileNavHidden = false">{{item.title}}</a>
+                            <nuxt-link class="" :to="item.href" @click="mobileNavHidden = false">{{item.title}}</nuxt-link>
                         </div>
                     </template>
                 </div>

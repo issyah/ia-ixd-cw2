@@ -3,7 +3,7 @@
     <div class="container px-4 mx-auto">
 
       <!-- heading -->
-      <div class="bg-yellow-400 inline-block mt-10">
+      <div class="bg-yellow-400 inline-block mt-16">
         <h1 class="text-center font-serif text-5xl font-bold text-gray-800 -mt-12 md:-ml-5">Financial Matters</h1>
       </div>
 
