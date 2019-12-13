@@ -1,20 +1,22 @@
 <template>
-    <div class="w-full px-4 py-1 md:flex justify-between items-center bg-gray-100">
+    <div class="w-full px-4 py-0 md:flex justify-between items-center bg-white">
         <div class="items-baseline md:flex">
-            <nuxt-link to="/">
-                <div class="px-4 flex items-baseline">
-                    <img src="~/assets/images/Yale_School_of_Art.png" alt="Yale School Of Art" class="h-8 inline w-auto self-end"/>
+            <div class="py-2 md:py-0 flex justify-between md:flex-none">
+                <nuxt-link to="/">
+                        <!-- <img src="~/assets/images/Yale_School_of_Art.png" alt="Yale School Of Art" class="h-3 block w-auto"/> -->
                     <div class="inline-block ml-2">
                         <span class="text-2xl font-semibold text-blue-800">YALE</span>
                     </div>
-                </div>
-            </nuxt-link>
-            <div class="md:flex items-center justify-around">
+                </nuxt-link>
+                <button class="md:hidden" @click="mobileNavHidden = !mobileNavHidden">NAV</button>
+            </div>
+
+            <div class="md:flex items-center justify-around" :class="{'hidden' : mobileNavHidden}">
                 <!-- Navigation -->
                 <div v-for="item in nav">
                     <template v-if="item.dropdown">
                         <div class="dropdown relative block md:inline-block mt-4 md:mt-0 md:pl-4">
-                            <a href="#" class="hover:text-blue-800 px-2 py-3 block md:inline-block border-b-2 border-transparent" :class="{'nav-links__active' : ($route.path.indexOf(item.activeLink)!= -1)}">{{item.title}}
+                            <a href="#" class="hover:text-blue-800 px-2 py-3 block md:inline-block border-b-4 border-transparent" :class="{'nav-links__active' : ($route.path.indexOf(item.activeLink)!= -1)}">{{item.title}}
                                 <svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="stroke-current inline w-3 y-3 text-black">
             						<g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
             							<g id="icon-shape">
@@ -35,7 +37,7 @@
                 </div>
             </div>
         </div>
-        <div class="md:flex items-center">
+        <div class="md:flex items-center" :class="{'hidden' : mobileNavHidden}">
             <div class="nav-links">
                 <a href="#">Staff</a>
             </div>
@@ -50,21 +52,22 @@
         @apply block;
     }
     .dropdown:hover > a{
-        @apply border-blue-800;
+        @apply border-yellow-400;
     }
     .nav-links{
-        @apply border-b-2 border-transparent px-4 py-2;
+        @apply border-b-4 border-transparent px-2 py-3;
     }
     .nav-links:hover{
-        @apply border-blue-800;
+        @apply border-yellow-400;
     }
     .nav-links__active{
-        @apply border-blue-800;
+        @apply border-yellow-400;
     }
 </style>
 <script>
     export default {
         data:()=>({
+            mobileNavHidden: true,
             nav: [
                 {
                     title: 'About the School',

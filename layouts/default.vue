@@ -1,7 +1,8 @@
 <template>
   <div class="">
     <Navbar></Navbar>
-    <nuxt class="h-screen"/>
+    <nuxt />
+    <Footer></Footer>
   </div>
 </template>
 
@@ -18,7 +19,10 @@ html {
   box-sizing: border-box;
 }
 body{
-    @apply bg-gray-200;
+    @apply bg-gray-100;
+}
+.font-serif{
+  font-family:yale,TimesNewRoman,Times New Roman,Times,Baskerville,Georgia,serif;
 }
 *,
 *:before,
@@ -29,10 +33,11 @@ body{
 </style>
 <script>
 import Navbar from '~/components/Navbar.vue'
-
+import Footer from '~/components/Footer.vue'
 export default {
   components: {
-    Navbar
+    Navbar,
+    Footer
   }
 }
 </script>
