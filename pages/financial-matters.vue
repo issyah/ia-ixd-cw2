@@ -11,13 +11,13 @@
       <div class="my-10">
         <ul class="inline-block">
           <li class="inline">
-            <a href="#" class="finance__tab_li" :class="setActive('tuition')" @click="tab = 'tuition'">Tuition Fees</a>
+            <a href="javascript:;" class="finance__tab_li" :class="setActive('tuition')" @click="tab = 'tuition'">Tuition Fees</a>
           </li>
           <li class="inline">
-            <a href="#" class="finance__tab_li" :class="setActive('scholarship')" @click="tab = 'scholarship'">Scholarship</a>
+            <a href="javascript:;" class="finance__tab_li" :class="setActive('scholarship')" @click="tab = 'scholarship'">Scholarship</a>
           </li>
           <li class="inline">
-            <a href="#" class="finance__tab_li" :class="setActive('loans')" @click="tab = 'loans'">Loans</a>
+            <a href="javascript:;" class="finance__tab_li" :class="setActive('loans')" @click="tab = 'loans'">Loans</a>
           </li>
         </ul>
       </div>
