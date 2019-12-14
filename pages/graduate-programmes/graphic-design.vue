@@ -308,6 +308,14 @@
     </div>
   </div>
 </template>
+<style>
+.btn-programmes{
+  @apply py-2 px-4 rounded-full border-2 border-gray-200 text-gray-200 inline-block
+}
+.btn-programmes:hover{
+  @apply bg-gray-200 text-gray-900
+}
+</style>
 <script>
   export default{
     data:()=>({
