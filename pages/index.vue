@@ -5,7 +5,7 @@
       <div class="container mx-auto">
         <div class="md:flex items-center">
           <div class="md:w-1/2 order-2">
-            <img src="https://via.placeholder.com/500?text=Registration+Image+for+2019" alt="" class="w-full h-full object-contain rounded overflow-hidden">
+            <img src="https://via.placeholder.com/500?text=Banner+Home+Page" alt="" class="w-full object-contain rounded overflow-hidden" style="height:500px;">
           </div>
           <div class="md:w-1/2 text-gray-200 order-1 px-4 py-4">
             <h1 class="text-xl text-gray-400">YALE SCHOOL OF ARTS</h1>
@@ -30,7 +30,9 @@
         </div>
         <div class="md:w-3/4 md:pl-8 px-4 py-8">
           <div class="text-sm text-gray-600">NOVEMBER 11, 2019</div>
-          <a href="#" class="text-3xl tracking-tight text-gray-800 font-bold hover:underline block mb-2">2020 PRESIDENTIAL VISITING FELLOW IN FINE ARTS: MICKALENE THOMAS</a>
+          <a href="#" class="text-3xl tracking-tight text-gray-800 font-bold hover:underline block mb-2">
+            2020 Presidential Visiting Fellow in Fine Arts: Mickalene Thomeas
+          </a>
           <p>The Yale School of Art announces the appointment of Mickalene Thomas as the 2020 Presidential Visiting Fellow in Fine Arts. </p>
         </div>
       </div>
@@ -43,7 +45,9 @@
             <div class="text-sm text-gray-600">
               OCTOBER 15, 2019
             </div>
-            <a href="#" class="text-2xl tracking-tight leading-tight text-gray-800 font-bold hover:underline">CELEBRATING 150 YEARS OF THE YALE SCHOOL OF ART</a>
+            <a href="#" class="text-2xl tracking-tight leading-tight text-gray-800 font-bold hover:underline ">
+              Celebrating 150 Years of The Yale School Of Art
+            </a>
           </div>
         </div>
         <div class="md:w-1/3 bg-white mx-4 overflow-hidden mt-6">
@@ -54,7 +58,9 @@
             <div class="text-sm text-gray-600">
               SEPTEMBER 16, 2019
             </div>
-            <a href="#" class="text-2xl tracking-tight leading-tight text-gray-800 font-bold hover:underline">ANNOUNCING THE AUTUMN 2019 HAYDEN DISTINGUISHED FELLOWS AND VISITING ARTISTR</a>
+            <a href="#" class="text-2xl tracking-tight leading-tight text-gray-800 font-bold hover:underline">
+              Announcing The Autumn 2019 Hayden Distinguished Fellows and Visiting Artist
+            </a>
           </div>
         </div>
         <div class="md:w-1/3 bg-white mx-4 overflow-hidden mt-6">
@@ -65,7 +71,9 @@
             <div class="text-sm text-gray-600">
               SEPTEMBER 16, 2019
             </div>
-            <a href="#" class="text-2xl tracking-tight leading-tight text-gray-800 font-bold hover:underline">MELEKO MOKGOSI APPOINTED ASSOCIATE PROFESSOR IN PAINTING/PRINTMAKING</a>
+            <a href="#" class="text-2xl tracking-tight leading-tight text-gray-800 font-bold hover:underline">
+            Meleko Mokgosi Appointed Associate Professor in Painting/Printmaking
+            </a>
           </div>
         </div>
       </div>

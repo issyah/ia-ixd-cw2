@@ -83,7 +83,7 @@
                 },
                 {title:'Admission', href:"", dropdown:[
                     {title: 'Graduate Admission', href:""},
-                    {title: 'Graduate Programmes', href:"/graduates-programmes"},
+                    {title: 'Graduate Programmes', href:"/graduate-programmes"},
                     {title: 'Financial Matters', href:"/financial-matters"}
                 ],
                 activeLink: 'graduates-programmes'
