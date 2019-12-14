@@ -11,7 +11,7 @@
             <h1 class="text-xl text-gray-400">YALE SCHOOL OF ARTS</h1>
             <h2 class="mb-4 text-4xl font-serif text-yellow-400 font-bold leading-none">Registration for 2019 open!</h2>
             <p class="mb-5">2019 Yale School of Art Admission Open House will be held Thursday, November 14th, Noon-4pm, Doors at 11:30am</p>
-            <nuxt-link to="" class="py-2 px-4 rounded-full border-2 border-gray-200 text-gray-200 hover:bg-gray-200 hover:text-gray-900 inline-block">Register Now</nuxt-link>
+            <nuxt-link to="" class="py-2 px-4 rounded-full border-2 border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-gray-900 inline-block">Register Now</nuxt-link>
           </div>
         </div>
       </div>

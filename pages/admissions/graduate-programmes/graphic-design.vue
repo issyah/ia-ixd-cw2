@@ -9,7 +9,7 @@
         <div class="container mx-auto px-4 relative">
           <ul class="inline-block text-gray-600">
             <li class="inline">
-              <nuxt-link to="/graduate-programmes" class="hover:text-yellow-400">Graduates Programme</nuxt-link>
+              <nuxt-link to="/admissions/graduate-programmes" class="hover:text-yellow-400">Graduate Programme</nuxt-link>
             </li>
             <li class="inline">/</li>
             <li class="inline text-yellow-400">Graphic Design</li>
@@ -27,17 +27,17 @@
             </div>
           </div>
         </div>
-        <div class="text-center mb-10">
-          <nuxt-link class="btn-programmes px-12" to="">
-            Apply Now
-          </nuxt-link>
-        </div>
         <div class="md:w-3/4 lg:w-9/12 mx-auto">
           <h2 class="text-center text-3xl mb-4 text-gray-200 font-semibold">Programme Overview</h2>
           <p class="text-gray-400 text-lg leading-relaxed tracking-normal mb-2">The graphic design program focuses on the development of a cohesive, investigative body of work, also known as the student’s thesis. At Yale, the graphic design thesis is conceived as a loose framework within which each student’s visual method is deployed across many diverse projects during the two-year course of study. While every thesis project is unique, there are several common features: a focus on methodology, the application of a visual method to studio work, and the organization of the work in a thoughtfully argued written document and “Thesis Book.”</p>
           <p class="text-gray-400 text-lg leading-relaxed tracking-normal mb-2">
             The individual collection of graphic design work by each student is supported on several levels simultaneously: studio work led by faculty meeting weekly; small six-person thesis groups meeting biweekly; individual sessions with writing and editing tutors; and lectures, presentations, and workshops.
           </p>
+          <div class="text-center mt-10 mb-10">
+            <nuxt-link class="btn-programmes px-12" to="">
+              Apply Now
+            </nuxt-link>
+          </div>
         </div>
       </div>
     </div>
@@ -299,7 +299,8 @@
             </div>
           </div>
         </div>
-        <div class="text-center mt-16">
+
+        <div class="text-center mt-24">
           <nuxt-link class="px-16 py-4 text-lg font-semibold shadow text-yellow-900 bg-yellow-500 rounded-full text-white hover:shadow-lg" to="">
             APPLY NOW
           </nuxt-link>
@@ -310,10 +311,10 @@
 </template>
 <style>
 .btn-programmes{
-  @apply py-2 px-4 rounded-full border-2 border-gray-200 text-gray-200 inline-block
+  @apply py-2 px-24 rounded-full border-2 border-yellow-400 text-yellow-400 inline-block
 }
 .btn-programmes:hover{
-  @apply bg-gray-200 text-gray-900
+  @apply bg-yellow-400 text-gray-900
 }
 </style>
 <script>

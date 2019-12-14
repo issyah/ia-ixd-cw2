@@ -24,13 +24,13 @@
             <nuxt-link :to="item.url">
               <img :src="item.img" class="w-full h-56 object-cover">
             </nuxt-link>
-            <div class="px-10 py-10">
+            <div class="px-10 py-10 relative">
               <nuxt-link :to="item.url">
                 <h2 class="font-bold text-4xl text-yellow-400 font-serif inline-block hover:underline">{{item.title}}</h2>
               </nuxt-link>
               <h4 class="text-lg leading-relaxed mt-5">{{item.content}}</h4>
-              <div class="text-right mt-6">
-                <nuxt-link :to="item.url" class="btn-programmes">
+              <div class="text-right mt-8">
+                <nuxt-link :to="item.url" class="btn-cta">
                   Learn more
                 </nuxt-link>
               </div>
@@ -53,6 +53,14 @@
     </div>
   </div>
 </template>
+<style>
+.btn-cta{
+  @apply py-2 px-4 rounded-full border-2 border-yellow-400 text-yellow-400 inline-block
+}
+.btn-cta:hover{
+  @apply bg-yellow-400 text-gray-900
+}
+</style>
 
 <script>
 
@@ -63,7 +71,7 @@ export default {
         title:'Graphic Design',
         img:'https://via.placeholder.com/600?text=Graphic+Design',
         content:'The graphic design program focuses on the development of a cohesive, investigative body of work, also known as the student’s thesis. At Yale, the graphic design thesis is conceived as a loose framework within which each student’s visual method is deployed across many diverse projects during the two-year course of study.',
-        url:'/graduate-programmes/graphic-design'
+        url:'/admissions/graduate-programmes/graphic-design'
       },
       {
         title:'Painting & Printmaking',
@@ -92,18 +100,3 @@ export default {
   },
 }
 </script>
-
-<style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-  @apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
-
-.btn-programmes{
-  @apply py-2 px-4 rounded-full border-2 border-gray-200 text-gray-200 inline-block
-}
-.btn-programmes:hover{
-  @apply bg-gray-200 text-gray-900
-}
-</style>
