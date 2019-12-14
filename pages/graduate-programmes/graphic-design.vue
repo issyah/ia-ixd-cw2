@@ -9,7 +9,7 @@
         <div class="container mx-auto px-4 relative">
           <ul class="inline-block text-gray-600">
             <li class="inline">
-              <nuxt-link to="/graduates-programmes" class="hover:text-yellow-400">Graduates Programme</nuxt-link>
+              <nuxt-link to="/graduate-programmes" class="hover:text-yellow-400">Graduates Programme</nuxt-link>
             </li>
             <li class="inline">/</li>
             <li class="inline text-yellow-400">Graphic Design</li>
