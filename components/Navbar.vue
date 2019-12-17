@@ -1,7 +1,7 @@
 <template>
-    <div class="w-full px-4 py-1 bg-white relative z-50">
+    <div class="w-full px-4 py-0 bg-white relative z-50">
         <div class="container mx-auto md:flex justify-between items-center">
-            <div class="items-baseline md:flex">
+            <div class="items-center md:flex">
                 <div class="py-2 md:py-0 flex justify-between md:flex-none">
                     <nuxt-link to="/">
                         <!-- <img src="~/assets/images/Yale_School_of_Art.png" alt="Yale School Of Art" class="h-3 block w-auto"/> -->

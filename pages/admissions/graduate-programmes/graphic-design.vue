@@ -2,7 +2,7 @@
   <div>
     <div class="w-full bg-gray-900 pb-10 pt-10 relative">
       <div class="absolute inset-0">
-        <img src="~assets/images/graphic-design.jpg" alt="Graphic Design" class="w-full h-full absolute object-cover"/>
+        <img src="~assets/images/graphic-design-mid.jpg" alt="Graphic Design" class="w-full h-full absolute object-cover"/>
       </div>
       <!-- main content -->
       <div class="lg:w-9/12 mx-auto px-4 py-12 bg-gray-900 shadow-md -mb-40 relative">
