@@ -3,8 +3,11 @@
     <div class="bg-gray-900 py-4">
         <div class="container px-4 mx-auto">
           <!-- heading -->
-          <div class="bg-gray-700 inline-block mt-16">
-            <h1 class="text-center font-serif text-5xl font-bold text-yellow-400 -mt-12 md:-ml-5">Financial Matters</h1>
+          <div class="relative my-10 inline-block">
+            <h1 class="text-5xl font-serif tracking-tight text-yellow-400 font-bold relative z-10">
+              Financial Matters
+            </h1>
+            <div class="absolute bottom-0 h-5 w-full bg-gray-700 mb-2"></div>
           </div>
 
         </div>

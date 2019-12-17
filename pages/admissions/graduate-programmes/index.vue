@@ -2,11 +2,17 @@
   <div>
     <!-- banner -->
     <div class="w-full bg-gray-900 py-10 relative">
-      <div class="container mx-auto pb-20 flex items-center relative" style="height:500px;">
+      <div class="container mx-auto pb-40 flex items-center relative" style="height:500px;">
         <div class="self-center">
           <div class="text-center">
-            <div class="bg-gray-700 inline-block my-10">
+            <!-- <div class="bg-gray-700 inline-block my-10">
               <h1 class="text-center font-serif text-6xl font-bold text-yellow-400 -mt-12 md:-ml-5">Graduate Programmes</h1>
+            </div> -->
+            <div class="relative my-10 inline-block">
+              <h1 class="text-6xl font-serif tracking-tight text-yellow-400 font-bold relative z-10">
+                Graduate Programmes
+              </h1>
+              <div class="absolute bottom-0 h-5 w-full bg-gray-700 mb-2"></div>
             </div>
           </div>
           <div class="text-center px-4">

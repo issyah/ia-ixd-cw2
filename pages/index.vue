@@ -17,10 +17,11 @@
       </div>
     </div>
     <div class="container mx-auto px-4 py-10">
-      <div class="bg-yellow-400 inline-block my-10">
-        <h3 class="text-5xl font-serif tracking-tight text-gray-800 font-bold -mt-12 md:-ml-5">
+      <div class="relative my-10 inline-block">
+        <h3 class="text-5xl font-serif tracking-tight text-gray-800 font-bold relative z-10">
           YALE ARTS NEWS
         </h3>
+        <div class="absolute bottom-0 h-5 w-full bg-yellow-400 mb-2"></div>
       </div>
       <div class=" md:flex md:items-center bg-white  overflow-hidden">
         <div class="md:w-1/4">
