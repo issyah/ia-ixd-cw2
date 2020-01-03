@@ -1,13 +1,13 @@
 <template>
   <div>
     <!-- banner -->
-    <div class="w-full bg-gray-900 py-10 relative">
+    <div class="w-full bg-gray-900 py-10 relative overflow-hidden graduate-programmes-banner">
+      <div class="absolute inset-0 bg-gray-900 opacity-50">
+
+      </div>
       <div class="container mx-auto pb-40 flex items-center relative" style="height:500px;">
         <div class="self-center">
           <div class="text-center">
-            <!-- <div class="bg-gray-700 inline-block my-10">
-              <h1 class="text-center font-serif text-6xl font-bold text-yellow-400 -mt-12 md:-ml-5">Graduate Programmes</h1>
-            </div> -->
             <div class="relative my-10 inline-block">
               <h1 class="text-6xl font-serif tracking-tight text-yellow-400 font-bold relative z-10">
                 Graduate Programmes
@@ -66,6 +66,11 @@
 .btn-cta:hover{
   @apply bg-yellow-400 text-gray-900
 }
+
+.graduate-programmes-banner{
+  background:url('~assets/images/graduate-programmes.jpeg') 50% 50% no-repeat;
+  background-size: cover;
+}
 </style>
 
 <script>
@@ -75,25 +80,25 @@ export default {
     programmes:[
       {
         title:'Graphic Design',
-        img:'https://via.placeholder.com/600?text=Graphic+Design',
+        img:require('~/assets/images/graphic-design-2.jpeg'),
         content:'The graphic design program focuses on the development of a cohesive, investigative body of work, also known as the student’s thesis. At Yale, the graphic design thesis is conceived as a loose framework within which each student’s visual method is deployed across many diverse projects during the two-year course of study.',
         url:'/admissions/graduate-programmes/graphic-design'
       },
       {
         title:'Painting & Printmaking',
-        img: 'https://via.placeholder.com/600?text=Painting+Printmaking',
+        img: require('~/assets/images/paint.jpeg'),
         content:'Instruction in the program is rooted in the investigation of painting as a unique genre with its own complex syntax and history. Within this setting, the program encourages diversity of practice and interpretation, innovation, and experimentation.',
         url:'#'
       },
       {
         title:'Photography',
-        img: 'https://via.placeholder.com/600?text=Photography',
+        img: require('~/assets/images/photography.jpeg'),
         content:'Photography is a two-year program of study admitting ten students a year. Darkroom, studio, and computer facilities are provided. Students receive technical instruction in black-and-white and color photography as well as nonsilver processes and digital image production.',
         url:'#'
       },
       {
         title:'Sculpture',
-        img: 'https://via.placeholder.com/600?text=Sculpture',
+        img: require('~/assets/images/sculpture.jpeg'),
         content:'The sculpture program offers students the opportunity to develop their work in a supportive environment consisting of critical feedback in a broad array of diverse voices. The field of sculpture includes a varied collection of working methods and outcomes—one set of tools is not privileged over another—creating a healthy and experimental program that mirrors the issues facing artists outside of the institution',
         url:'#'
       }
