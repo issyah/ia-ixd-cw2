@@ -42,10 +42,10 @@
                 </div>
             <div class="md:flex items-center" :class="{'hidden' : mobileNavHidden}">
             <div class="nav-links">
-                <a href="#" class="text-gray-600 hover:text-gray-900">Staff</a>
+                <nuxt-link to="/login" class="text-gray-600 hover:text-gray-900">Staff</nuxt-link>
             </div>
             <div class="nav-links">
-                <a href="#" class="text-gray-600 hover:text-gray-900">Students</a>
+                <nuxt-link to="/login" class="text-gray-600 hover:text-gray-900">Student</nuxt-link>
             </div>
         </div>
         </div>
@@ -67,6 +67,18 @@
     .nav-links__active{
         @apply border-yellow-500 text-gray-900 font-semibold;
     }
+    @media (max-width:768px){
+        .nav-links:hover{
+            @apply border-none;
+        }
+        .dropdown:hover > a{
+            @apply border-none;
+        }
+        .nav-links__active{
+            border:none;
+            font-weight: normal;
+        }
+    }
 </style>
 <script>
     export default {
@@ -78,7 +90,7 @@
                     title: 'About the School',
                     href:"",
                     dropdown:[
-                        {title: 'Mission Statement', href:"#"},
+                        {title: 'Mission Statement', href:"/about-the-school/mission-statement/"},
                         {title: 'Visiting', href:"#"},
                         {title: 'About this Site', href:"#"}],
                         activeLink: 'about-the-school'
