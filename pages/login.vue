@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="flex h-screen items-center justify-center">
-      <div class="md:w-1/2">
+      <div class="md:w-1/2 w-full px-4">
         <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
           <h1 class="text-2xl font-semibold">Login</h1>
           <div class="mb-4">
